@@ -10,7 +10,7 @@
           <div class="percentOSS">{{ job.percentOSS }}% of that time
             is on open source</div>
         </div>
-        <div class="description">{{ job.description }}</div>
+        <div class="description" v-html="job.description"></div>
       </div>
     </div>
 
@@ -18,17 +18,27 @@
 </template>
 
 <script>
-import jobData from '../jobs.js';
+  import jobData from '../jobs.js'
+  import marked from 'marked'
+  import DOMPurify from 'dompurify'
 
-export default {
-  name: 'Jobs',
-  data: () => ({
-    jobs: jobData
-  }),
-  props: {
-    msg: String
+  const jobsWithMarkdown = jobData.map((job) => ({
+    ...job,
+    description: DOMPurify.sanitize(
+      marked(job.description),
+      {ALLOWED_TAGS: ['em', 'strong', 'ul', 'li', 'br', 'p']}
+    )
+  }))
+
+  export default {
+    name: 'Jobs',
+    data: () => ({
+      jobs: jobsWithMarkdown
+    }),
+    props: {
+      msg: String
+    }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -2,7 +2,7 @@ entity: NumFOCUS
 title: Jobs board developer
 url: https://numfocus.org
 percentTime: 100
-percentOnOSS: 100
+percentOSS: 100
 deadline: 2020-10-08  # Application deadline
 expires: 2020-10-08  # Date when post is removed from board
 description: |
@@ -11,7 +11,7 @@ description: |
 
   Skills of the following technologies required:
 
-    * Markdown
+    * **Markdown**
     * CSS
     * JavaScript
 
