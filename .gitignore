@@ -5,6 +5,9 @@ node_modules
 package-lock.json
 *~
 
+# Auto-generated
+src/jobs.js
+
 # local env files
 .env.local
 .env.*.local
