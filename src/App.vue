@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <Jobs/>
+    <h1 id="title">Welcome to the NumFOCUS Jobs Board!</h1>
+    <JobsFilter/>
   </div>
 </template>
 
 <script>
-import Jobs from './components/Jobs.vue'
+import JobsFilter from './components/JobsFilter.vue'
 
 export default {
   name: 'App',
   components: {
-    Jobs
+    JobsFilter
   }
 }
 </script>
@@ -23,5 +24,15 @@ export default {
   color: #2c3e50;
   margin-top: 1em;
   margin-left: 1em;
+}
+#app h1 {
+  display: block;
+  width: 100%;
+}
+#jobs {
+  width: 75%;
+}
+#title {
+  width: 100%;
 }
 </style>

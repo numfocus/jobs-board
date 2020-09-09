@@ -1,7 +1,5 @@
 <template>
-  <div class="jobs">
-    <h1>Welcome to the NumFOCUS Jobs Board!</h1>
-
+  <div id="jobs">
     <div class="jobList">
       <div class="job" v-for="job in jobs" v-bind:key="job.id">
         <div class="meta">
@@ -13,30 +11,16 @@
         <div class="description" v-html="job.description"></div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
-  import jobData from '../jobs.js'
-  import marked from 'marked'
-  import DOMPurify from 'dompurify'
-
-  const jobsWithMarkdown = jobData.map((job) => ({
-    ...job,
-    description: DOMPurify.sanitize(
-      marked(job.description),
-      {ALLOWED_TAGS: ['em', 'strong', 'ul', 'li', 'br', 'p']}
-    )
-  }))
-
   export default {
     name: 'Jobs',
-    data: () => ({
-      jobs: jobsWithMarkdown
-    }),
     props: {
-      msg: String
+      filter: Object,
+      msg: String,
+      jobs: Array
     }
   }
 </script>

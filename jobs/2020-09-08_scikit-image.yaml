@@ -1,7 +1,7 @@
 entity: scikit-image
 title: Part-time
 url: https://scikit-image.org
-percentTime: 100
+percentTime: 50
 percentOSS: 100
 deadline: 2020-09-15  # Application deadline
 expires: 2020-09-15  # Date when post is removed from board
