@@ -1,0 +1,72 @@
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#2c3e50;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+h1 {
+  display: block;
+  width: 100%;
+}
+.jobs {
+  width: 75%;
+}
+.title {
+  width: 100%;
+}
+.jobsLayout {
+  display: flex;
+}
+.filter {
+  width: 10%;
+  background: #eee;
+  padding: 2rem;
+}
+.section {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+.reset {
+  margin-top: 2rem;
+  background: gray;
+  color: white;
+  border: 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: 100%;
+}
+.jobList {
+  display: flex;
+}
+.job {
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid gray;
+}
+.job .meta {
+    font-size: 100%;
+    font-family: monospace;
+}
+.job .title {
+    font-size: 150%;
+}
+.job .description {
+    margin-top: 1rem;
+}
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
