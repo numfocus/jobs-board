@@ -24,7 +24,7 @@ jobs:
 
       - name: Build 🔧
         run: |
-          gatsby build
+          make build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
