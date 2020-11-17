@@ -7,14 +7,14 @@ import os
 
 
 class JSONEncoder(json.JSONEncoder):
-    #Override the default method
     def default(self, obj):
         if isinstance(obj, (datetime.date, datetime.datetime)):
             return obj.isoformat()
 
+
 jobs = []
-for job in glob.glob("jobs/*.yaml"):
-    print(f"-> {job}")
+for job in glob.glob('jobs/*.yaml'):
+    print(f'-> {job}...', end='')
     # We could also allow specification of date inside job post file
     # For now, it is parsed from the filename
     try:
@@ -28,7 +28,15 @@ for job in glob.glob("jobs/*.yaml"):
     post = yaml.load(open(job, "r"), Loader=yaml.Loader)
     post['date'] = date
     post['id'] = os.path.splitext(job)[0]
-    jobs.append(post)
+
+    now = datetime.date.today()
+    if 'expires' in post and now > post['expires']:
+        print('expired')
+        continue
+    else:
+        jobs.append(post)
+        print('OK')
+
 
 outfile = 'src/jobs.js'
 with open(outfile, 'w') as f:

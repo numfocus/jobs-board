@@ -1,0 +1,10 @@
+entity: Atari
+title: Full-time
+url: https://en.wikipedia.org/wiki/Atari
+percentTime: 100
+percentOSS: 0
+deadline: 1992-01-01  # Application deadline
+expires: 1992-02-01  # Date when post is removed from board
+description: |
+  Atari is looking for a full time games developer to work on our
+  latest puzzle action title, Acid Drop.
