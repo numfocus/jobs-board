@@ -49,9 +49,11 @@ h1 {
 .job .meta {
     font-size: 100%;
     font-family: monospace;
+    color: #e1523d;
 }
 .job .title {
     font-size: 150%;
+    color: #007d8a;
 }
 .job .description {
     margin-top: 1rem;
