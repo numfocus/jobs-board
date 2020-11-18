@@ -17,14 +17,14 @@ npm install
 ## Develop
 
 ```shell
-gatsby develop
+make develop
 ```
 The site is now running at `http://localhost:8000`
 
 ## Deploy
 
 ```shell
-gatsby build
+make build
 ```
 
 The site is generated into `./public`.

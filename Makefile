@@ -1,5 +1,10 @@
-.PHONY: build
+.PHONY: build develop jobs
 
-build:
+jobs:
 	python tools/bundle_posts.py
+
+develop: jobs
+	gatsby develop
+
+build: jobs
 	gatsby build
