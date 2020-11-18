@@ -10,6 +10,20 @@ h1 {
   display: block;
   width: 100%;
 }
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
 .jobs {
   width: 75%;
 }
@@ -54,21 +68,29 @@ h1 {
 .job .title {
     font-size: 150%;
     color: #007d8a;
+    padding-bottom: 0.75rem;
 }
 .job .description {
     margin-top: 1rem;
 }
-h3 {
-  margin: 40px 0 0;
+.badges {
+    float: right;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.badge {
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.badge .tooltip {
+  visibility: hidden;
+  background-color: #007d8a;
+  color: white;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
 }
-a {
-  color: #42b983;
+.badge:hover .tooltip {
+  visibility: visible;
 }
