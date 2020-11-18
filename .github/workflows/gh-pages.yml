@@ -23,6 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install -r requirements.txt
           npm install
           npm install -g gatsby
 
