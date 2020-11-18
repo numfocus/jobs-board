@@ -37,6 +37,7 @@ for job in glob.glob('jobs/*.yaml'):
         jobs.append(post)
         print('OK')
 
+jobs = list(sorted(jobs, key=lambda x: x['date'], reverse=True))
 
 outfile = 'src/jobs.js'
 with open(outfile, 'w') as f:
