@@ -43,7 +43,6 @@ const JobsFilter = () => {
             <input name="fullTime" type="checkbox" ref={register} />
             Full-time
           </label>
-          <br/>
 
           <div className="section">
             Open Source
@@ -58,6 +57,14 @@ const JobsFilter = () => {
               <option value="100">100%</option>
             </select>
             &nbsp;OSS time
+          </label>
+
+          <div className="section">
+            Location
+          </div>
+          <label>
+            <input name="remote" type="checkbox" ref={register} />
+            Remote
           </label>
 
           <button

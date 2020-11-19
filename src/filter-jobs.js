@@ -12,6 +12,10 @@ const filterJobs = (jobs, filter) => {
     jobs = jobs.filter((job) => job.percentOSS >= parseInt(filter.ossTimeGt))
   }
 
+  if (filter.remote) {
+    jobs = jobs.filter((job) => (job.location || 'remote').toLowerCase() === 'remote' );
+  }
+
   return jobs;
 }
 

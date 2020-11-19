@@ -24,13 +24,18 @@ const Job = ({ job }) => {
         <div className="title">{ job.entity } / { job.title }</div>
       </Link>
       <div className="meta">
-        <div className="percentTime">This job is { job.percentTime }% time.</div>
+        <div className="percentTime">This job is <b>{ job.percentTime }%</b> time.</div>
         <div className="percentOSS">
-          { job.percentOSS }% of that time is on open source
+          <b>{ job.percentOSS }%</b> of that time is on <b>open source</b>.
         </div>
         { job.deadline &&
           <div className="deadline">
-            Application deadline: { job.deadline }
+            Application deadline: <b>{ job.deadline }</b>
+          </div>
+        }
+        { job.location &&
+          <div className="location">
+            Location: { job.location }
           </div>
         }
       </div>
