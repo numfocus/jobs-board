@@ -1,6 +1,10 @@
 # Auto-generated
 src/jobs.js
 
+# Backup files
+*~
+\#*
+
 # Logs
 logs
 *.log
