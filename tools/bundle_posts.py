@@ -1,9 +1,10 @@
-import yaml
 import json
 import glob
 import sys
 import datetime
 import os
+
+import yaml
 
 
 class JSONEncoder(json.JSONEncoder):
@@ -27,15 +28,10 @@ for job in glob.glob('jobs/*.yaml'):
 
     post = yaml.load(open(job, "r"), Loader=yaml.Loader)
     post['date'] = date
-    post['id'] = os.path.splitext(job)[0]
+    post['id'] = os.path.splitext(os.path.basename(job))[0]
 
-    now = datetime.date.today()
-    if 'expires' in post and now > post['expires']:
-        print('expired')
-        continue
-    else:
-        jobs.append(post)
-        print('OK')
+    jobs.append(post)
+    print('OK')
 
 jobs = list(sorted(jobs, key=lambda x: x['date'], reverse=True))
 
@@ -44,5 +40,4 @@ with open(outfile, 'w') as f:
     f.write('const jobs = ')
     f.write(JSONEncoder().encode(jobs))
     f.write('\nexport default jobs;\n')
-
 print(f'Wrote posts to [{outfile}]')

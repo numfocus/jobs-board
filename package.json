@@ -23,6 +23,7 @@
     "react-hook-form": "^6.11.1"
   },
   "devDependencies": {
+    "esm": "^3.2.25",
     "prettier": "2.1.2"
   },
   "repository": {

@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import Badge from "./Badge";
 
-const Job = ({ job }) => (
+const Job = ({ job }) => {
+  return (
   <div className="job">
     <div className="badges">
       { job.badges &&
@@ -14,8 +16,10 @@ const Job = ({ job }) => (
         <Badge type="Pure OSS"/>
       }
     </div>
-    <div className="meta">
+    <Link to={`/job/${job.id}`}>
       <div className="title">{ job.entity } / { job.title }</div>
+    </Link>
+    <div className="meta">
       <div className="percentTime">This job is { job.percentTime }% time.</div>
       <div className="percentOSS">
         { job.percentOSS }% of that time is on open source
@@ -31,6 +35,6 @@ const Job = ({ job }) => (
       dangerouslySetInnerHTML={{__html: job.description}}
     />
   </div>
-);
+  )};
 
 export default Job;
