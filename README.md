@@ -1,5 +1,10 @@
 # NumFOCUS jobs board
 
+## Posting a job
+
+Copy `jobs/template.yaml` to `jobs/YYYY-MM-DD_groupname.yaml`, fill
+out the details, and file a pull request to this repository.
+
 ## Installation
 
 Install gatsby:
@@ -31,4 +36,4 @@ The site is generated into `./public`.
 
 ## Site generator
 
-This site is based on [Gatsby](https://gatsbyjs.com)
+This site is generated using [Gatsby](https://gatsbyjs.com)
