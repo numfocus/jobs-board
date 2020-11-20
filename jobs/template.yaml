@@ -6,8 +6,5 @@ percentOSS: 100
 deadline: 2020-11-19  # Application deadline
 expires: 2020-11-19   # Date when post is removed from board
 location: Remote
-
-# The job description, in Markdown format
 description: |
-  Atari is looking for a full time games developer to work on our
-  latest puzzle action title, Acid Drop.
+  The job description goes here, in Markdown format.
