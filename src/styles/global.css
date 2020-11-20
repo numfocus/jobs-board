@@ -2,17 +2,13 @@ html {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:#2c3e50;
-  margin-top: 1em;
-  margin-left: 1em;
+}
+body {
+  padding: 0;
+  margin: 0;
 }
 h1 {
-  display: block;
   width: 100%;
-}
-.header a {
-  text-decoration: none;
-  color: #444;
 }
 h3 {
   margin: 40px 0 0;
@@ -30,6 +26,16 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+.page {
+}
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.header a {
+  text-decoration: none;
+  color: #444;
+}
 .jobs {
   width: 75%;
 }
@@ -38,10 +44,15 @@ a {
 }
 .jobsLayout {
   display: flex;
+  align-items: flex-start;
 }
-.filter {
+.leftColumn {
   width: 10%;
   min-width: 9rem;
+  display: flex;
+  flex-direction: column;
+}
+.filter {
   background: #eee;
   padding: 2rem;
 }
@@ -57,6 +68,17 @@ a {
   border: 0;
   padding: 0.5rem 1rem 0.5rem 1rem;
   width: 100%;
+}
+.howToPost {
+  background: #007d8a;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.howToPost a {
+  color: white;
+  font-weight: bold;
 }
 .jobList {
   display: flex;
@@ -92,7 +114,9 @@ a {
 .job a {
   text-decoration: none;
 }
-
+.job .meta a {
+  font-weight: normal;
+}
 .badges {
   float: right;
 }

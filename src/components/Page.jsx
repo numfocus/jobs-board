@@ -2,14 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Page = ({ children }) => (
-  <>
-    <div className="header">
-      <Link to="/">
-        <h1>NumFOCUS Jobs Board</h1>
-      </Link>
+  <div className="page">
+    <div className="content">
+      <div className="header">
+        <Link to="/">
+          <h1>NumFOCUS Jobs Board</h1>
+        </Link>
+      </div>
+      { children }
     </div>
-    { children }
-  </>
+  </div>
 );
 
 export default Page;

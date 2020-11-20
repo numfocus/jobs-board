@@ -38,6 +38,11 @@ const Job = ({ job }) => {
             Location: { job.location }
           </div>
         }
+        { job.url &&
+          <div classNmae="url">
+            URL: <a href={job.url}>{ job.url }</a>
+          </div>
+        }
       </div>
       <div
         className="description"
