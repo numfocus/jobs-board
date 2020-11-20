@@ -1,0 +1,13 @@
+entity: Company or group name
+title: Position title
+url: https://contact.url
+percentTime: 100
+percentOSS: 100
+deadline: 2020-11-19  # Application deadline
+expires: 2020-11-19   # Date when post is removed from board
+location: Remote
+
+# The job description, in Markdown format
+description: |
+  Atari is looking for a full time games developer to work on our
+  latest puzzle action title, Acid Drop.

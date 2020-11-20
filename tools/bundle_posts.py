@@ -15,6 +15,9 @@ class JSONEncoder(json.JSONEncoder):
 
 jobs = []
 for job in glob.glob('jobs/*.yaml'):
+    if job == 'jobs/template.yaml':
+        continue
+
     print(f'-> {job}...', end='')
     # We could also allow specification of date inside job post file
     # For now, it is parsed from the filename
