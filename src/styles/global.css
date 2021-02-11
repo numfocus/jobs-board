@@ -14,11 +14,14 @@ h3 {
   margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+ol {
+  margin-left: 0.5rem;
   padding: 0;
 }
 li {
-  display: inline-block;
   margin: 0 10px;
 }
 a {
