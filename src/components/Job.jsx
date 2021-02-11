@@ -39,7 +39,7 @@ const Job = ({ job }) => {
           </div>
         }
         { job.url &&
-          <div classNmae="url">
+          <div className="url">
             URL: <a href={job.url}>{ job.url }</a>
           </div>
         }
