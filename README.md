@@ -1,4 +1,8 @@
-# NumFOCUS jobs board
+# NumFOCUS Jobs Board
+
+Please refer to the [charter](CHARTER.md) for more on the purpose of the
+Jobs Board, the types of posts that are accepted, and the technical
+design of the software.
 
 ## Posting a job
 
