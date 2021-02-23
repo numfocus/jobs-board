@@ -17,7 +17,7 @@ Posts may only appear on the Jobs Board if at least 25% of the position is for c
 
 We are also limiting posts to positions that involve work on projects affiliated with NumFOCUS.
 
-Posts have to be approved by at least two NumFOCUS staff members before being posted to the site.
+Posts are approved by NumFOCUS staff before being posted to the site.
 Once posted, each job receives a permalink which can be shared outside.
 
 The NumFOCUS Board reserves the right to change posting rules and
