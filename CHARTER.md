@@ -1,14 +1,14 @@
 # NumFOCUS Jobs Board Charter
 
-The NumFOCUS Jobs Board (https://jobs.numfocus.org/) is a venue for advertising open source developer positions.
-This charter discusses the intent of the Jobs Board, who is allowed to advertise there, the posting process, and also briefly outlines the technical mechanism behind the board.
+The NumFOCUS Jobs Board (https://jobs.numfocus.org/) is a venue for posting open source developer positions.
+This charter discusses the intent of the Jobs Board, who is allowed to post there, the posting process, and also briefly outlines the technical mechanism behind the board.
 
 ## Intent
 
 The Jobs Board is a platform in service of the NumFOCUS community: it helps prospective candidates find positions in industry that involve community open source.
 Industry benefits by having access to a large pool of proven, highly-skilled developers.
 
-Currently, the Jobs Board only allows posting job ads, but eventually it will also allow individuals to announce when they are available to take on new positions.
+Currently, the Jobs Board only allows posting jobs, but eventually it will also allow individuals to announce when they are available to take on new positions.
 
 ## Posting rules
 
