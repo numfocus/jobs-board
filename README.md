@@ -6,8 +6,9 @@ design of the software.
 
 ## Posting a job
 
-Copy `jobs/template.yaml` to `jobs/YYYY-MM-DD_groupname.yaml`, fill
-out the details, and file a pull request to this repository.
+Review the [charter](CHARTER.md).  Then, copy `jobs/template.yaml` to
+`jobs/YYYY-MM-DD_groupname.yaml`, fill out the details, and file a
+pull request to this repository.
 
 ## Installation
 

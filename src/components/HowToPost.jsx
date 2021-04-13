@@ -3,9 +3,9 @@ import React from "react";
 const HowToPost = () => (
   <div className="howToPost">
     <p>
-      To post a job to this board, please&nbsp;
-      <a href="https://github.com/numfocus/jobs-board">
-        file a pull request
+      To post a job, please
+      <a href="https://github.com/numfocus/jobs-board#posting-a-job">
+        see the instructions
       </a>.
     </p>
     <p>
