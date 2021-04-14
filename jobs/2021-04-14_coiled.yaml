@@ -1,0 +1,18 @@
+entity: Coiled
+title: OSS Engineer
+url: https://coiled.io/jobs
+percentTime: 100
+percentOSS: 80
+deadline: 2021-10-14
+expires: 2021-10-14
+location: Remote
+description: |
+  This role is for a software engineer to work on the open source Dask project.
+  You will be able to build and maintain Dask and its connections with surrounding
+  projects.
+
+  This role will also ensure that Coiled customers are effective in their use of
+  Dask to scale Python. You will interact with users (both community and clients),
+  engage in team prioritization, and work to implement fixes and features to improve
+  the experience and capabilities of the Python ecosystem, verifying that those fixes
+  resolve user needs.
