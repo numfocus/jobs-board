@@ -12,6 +12,12 @@ pull request to this repository.
 
 ## Installation
 
+Install Python dependencies:
+
+```shell
+pip install -r requirements.txt
+```
+
 Install gatsby:
 
 ```shell
