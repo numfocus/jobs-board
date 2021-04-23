@@ -1,7 +1,5 @@
 import React from "react";
 
-import marked from 'marked';
-
 import { useForm } from "react-hook-form";
 
 import Jobs from "./Jobs";
@@ -9,9 +7,8 @@ import HowToPost from "./HowToPost";
 
 import jobData from '../jobs.js';
 import filterJobs from '../filter-jobs.js';
+import jobToMarkdown from '../jobToMarkdown.js';
 
-const DOMPurify = (typeof window !== `undefined`) ?
-      require('dompurify') : undefined;
 
 const defaultFormValues = {
   fullTime: false,
@@ -22,14 +19,7 @@ const JobsFilter = () => {
   const { register, watch, reset } = useForm();
   const formData = watch();
 
-  const sanitize = DOMPurify ? DOMPurify.sanitize : (x, y) => x;
-  const jobsWithMarkdown = jobData.map((job) => ({
-    ...job,
-    description: sanitize(
-      marked(job.description),
-      {ALLOWED_TAGS: ['em', 'strong', 'ol', 'ul', 'li', 'br', 'p', 'a']}
-    )
-  }));
+  const jobsWithMarkdown = jobData.map(jobToMarkdown);
 
   const jobs = filterJobs(jobsWithMarkdown, formData);
 

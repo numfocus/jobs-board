@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Badge from "./Badge";
+import jobToMarkdown from "../jobToMarkdown.js";
+
 
 const Job = ({ job }) => {
   if (job === undefined) {
     console.log("We don't expect an empty job posting; aborting");
     return <div>Empty job posting</div>;
   }
+
+  job = jobToMarkdown(job);
   return (
     <div className="job">
       <div className="badges">
