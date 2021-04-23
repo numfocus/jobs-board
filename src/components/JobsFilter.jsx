@@ -27,7 +27,7 @@ const JobsFilter = () => {
     ...job,
     description: sanitize(
       marked(job.description),
-      {ALLOWED_TAGS: ['em', 'strong', 'ol', 'ul', 'li', 'br', 'p']}
+      {ALLOWED_TAGS: ['em', 'strong', 'ol', 'ul', 'li', 'br', 'p', 'a']}
     )
   }));
 
