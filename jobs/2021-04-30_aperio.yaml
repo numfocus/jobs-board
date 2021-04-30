@@ -1,0 +1,17 @@
+entity: Aperio Software
+title: Software Developer
+url: https://aperiosoftware.com
+percentTime: 100
+percentOSS: 80
+deadline: 2021-05-14  # Application deadline
+expires: 2021-05-30   # Date when post is removed from board
+location: Remote
+description: |
+  Aperio Software is a company that specialises in developing software and providing software training in scientific domains for a variety of organisations and open source projects.
+  Past and current projects include the development of user tools and calibration software for the Daniel K. Inouye Solar Telescope (DKIST), work on the AAS WorldWide Telescope project, contributions to the Astropy and SunPy projects, and development of the glue visualisation tool.
+
+  Aperio is seeking a software developer and experienced open-source contributor to work with us on our growing number of projects in solar physics and astronomy, primarily in established open-source projects.
+  This will include working on the development, testing, documentation and maintenance of several different software packages.
+  You will be required to liaise with clients, other staff and the open-source community. 
+  In addition, there will be the opportunity to get involved in designing and delivering programming workshops.
+  For more details see the full job description at [aperiosoftware.com/jobs](https://aperiosoftware.com/jobs).
