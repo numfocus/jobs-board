@@ -1,0 +1,13 @@
+entity: Quansight
+title: Contributor Experience Lead
+url: https://quansight.breezy.hr/p/361a2e7da19b-contributor-experience-lead
+percentTime: 100
+percentOSS: 100
+badges: ['Sponsor']
+deadline: 2021-10-31  # Application deadline
+expires: 2021-10-31   # Date when post is removed from board
+location: Remote
+description: |
+  We are looking for a Contributor Experience Lead, who will work across
+  projects to identify, document, and implement practices to foster inclusive
+  open-source communities for NumPy, SciPy, Matplotlib, and Pandas.
