@@ -50,6 +50,7 @@ const Job = ({ job }) => {
       </div>
       <div
         className="description"
+        key={ job.id }
         dangerouslySetInnerHTML={{__html: job.description}}
       />
     </div>
