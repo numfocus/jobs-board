@@ -7,7 +7,6 @@ import HowToPost from "./HowToPost";
 
 import jobData from '../jobs.js';
 import filterJobs from '../filter-jobs.js';
-import jobToMarkdown from '../jobToMarkdown.js';
 
 
 const defaultFormValues = {
@@ -19,9 +18,7 @@ const JobsFilter = () => {
   const { register, watch, reset } = useForm();
   const formData = watch();
 
-  const jobsWithMarkdown = jobData.map(jobToMarkdown);
-
-  const jobs = filterJobs(jobsWithMarkdown, formData);
+  const jobs = filterJobs(jobData, formData);
 
   return (
     <div className="jobsLayout">
