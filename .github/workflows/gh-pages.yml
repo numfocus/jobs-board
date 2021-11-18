@@ -23,6 +23,12 @@ jobs:
         with:
           node-version: '12'
 
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('package.json') }}
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
