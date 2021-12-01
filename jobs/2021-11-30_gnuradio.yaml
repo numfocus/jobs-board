@@ -7,11 +7,13 @@ deadline: 2022-04-01  # Application deadline
 expires: 2022-04-01   # Date when post is removed from board
 location: Remote
 description: |
-  GNU Radio has recently won a small grant from NumFOCUS to help improve GNU Radio’s tutorials, as they play a major role in helping new users get through the steep learning curve. We are looking to hire a part-time contractor to perform the work of one GNU Radio expert. It is anticipated that this work will be performed during Q1 of 2022. Please email jobs@gnuradio.org if you are interested.
- 
-  ## $3600 total, $60 per hour, 60 hours total spread across at least 1 month (max 3 months)
+  GNU Radio has recently won a small grant from NumFOCUS to help improve GNU Radio’s tutorials, as they play a major role in helping new users get through the steep learning curve. We are looking to hire a part-time contractor to perform the work of one GNU Radio expert. It is anticipated that this work will be performed during Q1 of 2022.
 
-  ##Tasks: (tackle one or more of the following tasks)
+  ### Rate
+
+  $3600 total, $60 per hour, 60 hours total spread across at least 1 month (max 3 months)
+
+  ### Tasks (tackle one or more of the following tasks)
 
   * Complete overhaul of the QPSK and BPSK tutorials reflecting the change from ‘Polyphase Clock Sync’ to ‘Symbol Sync’, and from ‘CMA Equalizer’ to ‘Linear Equalizer’ and ‘Adaptive Algorithm’.
   * The Embedded Python Block tutorial should be the first tutorial that dives into how to write a block (in Python) but it’s currently performing double duty as the Embedded Python Block “block docs” page, so the task is to separate them into two pages and improve the tutorial itself.
