@@ -3,7 +3,7 @@ title: Community Manager
 percentTime: 100
 percentOSS: 100
 deadline: 2021-12-15  # Application deadline
-expires: 2022-01-01   # Date when post is removed from board
+expires: 2021-12-21   # Date when post is removed from board
 location: Remote
 description: |
   Zarr is a format for the storage of chunked, compressed, N-dimensional arrays.
