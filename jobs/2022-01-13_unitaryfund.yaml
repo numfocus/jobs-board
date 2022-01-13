@@ -1,0 +1,18 @@
+entity: Unitary Fund
+title: Member of the Technical Staff (part-time)
+url: https://unitary.fund/jobs/mts.html
+percentTime: 40
+percentOSS: 100
+deadline: 2022-02-13  # Application deadline
+expires: 2022-02-13   # Date when post is removed from board
+location: Remote
+description: |
+  We’re hiring Members of Technical Staff with a focus on Mitiq.
+  You'll be part of the core development team of [Mitiq](https://github.com/unitaryfund/mitiq), the open-source quantum
+  error mitigation toolkit, in collaboration with key players from the industry and research sector.
+
+  Unitary Fund is a 501(c)(3) non-profit working to create a quantum technology ecosystem that benefits the most people.
+  We run a grant program to support new open source quantum tech, and we fund our own research on key projects for the ecosystem.
+  We’re hiring for a part-time marketing and communications role on our team.
+  This opening is a rare opportunity to contribute to the developing quantum technology ecosystem.
+  The full job description can be found [here](https://unitary.fund/jobs/mts.html)
