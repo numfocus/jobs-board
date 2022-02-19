@@ -1,0 +1,27 @@
+entity: TU Delft & SymPy
+title: "Postdoctoral Researcher Opening: Advancing Biomechanical Modeling By Improving SymPy Code Generation (x/f/m)"
+url: https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures/details/?nPostingId=2261&nPostingTargetId=5624&id=QEZFK026203F3VBQBLO6G68W9&LG=UK&mask=external
+percentTime: 100
+percentOSS: 100
+deadline: 2022-02-28  # Application deadline
+expires: 2022-03-01   # Date when post is removed from board
+location: Delft, Netherlands with possibility of remote
+description: |
+  The TU Delft Bicycle Lab is seeking a postdoctoral researcher for a 1
+  year equivalent contract (full or part time). You will work on a
+  sub-project of [SymPy\'s \"Improving Foundational Open Source Symbolic
+  Mathematics for Science\"
+  grant](https://chanzuckerberg.com/eoss/proposals/sympy-improving-foundational-open-source-symbolic-mathematics-for-science/)
+  funded by the [Chan-Zuckerberg Foundation's "Essential Open Source
+  Software for Science\"
+  program](https://chanzuckerberg.com/newsroom/czi-awards-16-million-for-foundational-open-source-software-tools-essential-to-biomedicine/).
+  The purpose of the overall grant is to improve the SymPy Python symbolic
+  mathematics library in the key areas of performance, code generation,
+  and documentation. The [full grant
+  proposal](https://doi.org/10.6084/m9.figshare.16590053.v1) is available
+  publicly on Figshare.
+
+  **Applications Due February 28, 2022**
+
+  More information about the job can be found at
+  https://mechmotum.github.io/blog/sympy-czi-postdoc.html
