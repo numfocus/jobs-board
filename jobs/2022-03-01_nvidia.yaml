@@ -1,0 +1,19 @@
+entity: NVIDIA
+title: PyData Open Source Developer
+url: https://tinyurl.com/nvidia-pydata-job
+percentTime: 100
+percentOSS: 80
+deadline: 2022-09-30  # Application deadline
+expires: 2022-09-30   # Date when post is removed from board
+location: Remote
+description: |
+  Hundreds of thousands of AI engineers, data scientists, and data engineers rely 
+  on both NVIDIA technologies and related PyData open source projects to do their 
+  life's work. We are continuing to expand our support of the PyData ecosystem and 
+  looking to hire strong engineers who are or can become contributors to libraries 
+  like Pandas, Scikit-learn, NumPy, and more! This is an excellent opportunity for 
+  you to balance between contributing to and helping users of these 
+  open source projects.
+  
+  A full job description and application form can be found on the 
+  [NVIDIA career site job posting](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Software-Engineer--PyData-Open-Source-Developer---RAPIDS_JR1954810).
