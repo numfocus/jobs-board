@@ -1,0 +1,22 @@
+entity: ArviZ
+title: Dataviz External Consultant
+url: https://github.com/arviz-devs/GSoD/blob/main/2021/viz_evaluation.md
+percentTime: NA
+percentOSS: 100
+deadline: 2022-07-31  # Application deadline
+expires: 2022-07-31   # Date when post is removed from board
+location: Remote
+description: |
+  Dataviz is a key part of any statistical or data science job, and Bayesian
+  models are not an exception. ArviZ provides tools for Exploratory Analysis
+  of Bayesian Models, from diagnostics and summary statistics to bespoke
+  visualizations.
+
+  We are searching for someone to analyze the current state of available
+  plots to identify missing visualizations, defaults not following bad
+  practices and missing references in the documentation and write a
+  report with the findings and recommendations. The report will be published
+  in hopes it also helps other dataviz libraries.
+
+  The full job description and application process is available on
+  [our GitHub](https://github.com/arviz-devs/GSoD/blob/main/2021/viz_evaluation.md)
