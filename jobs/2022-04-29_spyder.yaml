@@ -1,0 +1,24 @@
+entity: Spyder
+title: Spyder Junior Developer
+url: https://tinyurl.com/spyder-grant-job
+percentTime: 100
+percentOSS: 100
+deadline: 2022-05-15  # Application deadline
+expires: 2022-05-15   # Date when post is removed from board
+location: Remote
+description: |
+  [Spyder](https://www.spyder-ide.org/) is a free and open source scientific 
+  environment written in Python, for Python, and designed by and for 
+  scientists, engineers and data analysts. It features a unique combination 
+  of the advanced editing, analysis, debugging, and profiling functionality 
+  of a comprehensive development tool with the data exploration, interactive 
+  execution, deep inspection, and beautiful visualization capabilities of a 
+  scientific package.
+
+  We are looking for someone to help us improve the installation experience 
+  for the Spyder IDE Windows users, by enabling the current standalone 
+  installers available to be auto-updatable and providing a way to install 
+  custom packages that are not bundled with the installers in a simpler way.
+
+  The full job/project description and application process is available on 
+  [this document](https://docs.google.com/document/d/e/2PACX-1vTUQDK4zrmwJ0E_KQehqmAjWWBFM8aJSlxCOY4m8k64pYnhYn81OMg6VaCPKXdx3DHjbSbxWjOlUMEs/pub)
