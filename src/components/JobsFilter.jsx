@@ -30,7 +30,7 @@ const JobsFilter = () => {
             </div>
 
             <label>
-              <input name="fullTime" type="checkbox" ref={register} />
+              <input type="checkbox" {...register('fullTime')} />
               Full-time
             </label>
 
@@ -39,7 +39,7 @@ const JobsFilter = () => {
             </div>
 
             <label>
-              <select name="ossTimeGt" ref={register}>
+              <select {...register('ossTimeGt')}>
                 <option value="0">Any</option>
                 <option value="25">&gt; 25%</option>
                 <option value="50">&gt; 50%</option>
@@ -53,7 +53,7 @@ const JobsFilter = () => {
               Location
             </div>
             <label>
-              <input name="remote" type="checkbox" ref={register} />
+              <input type="checkbox" {...register('remote')} />
               Remote
             </label>
 

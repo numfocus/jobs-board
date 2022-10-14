@@ -1,4 +1,4 @@
-import marked from 'marked';
+import { marked } from 'marked';
 
 export const jobToMarkdown = (job) => {
   const DOMPurify = (typeof window !== `undefined`) ?
