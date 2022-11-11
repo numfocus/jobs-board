@@ -7,75 +7,70 @@ deadline: 2022-12-15  # Application deadline
 expires: 2023-01-15   # Date when post is removed from board
 location: Remote
 description: |
-  
-MDAnalysis is looking to hire a project, community and outreach manager. This is a remote full-time role on a 2-year contract, with possibility to renew subject to funding availability. The position will ideally start early in 2023.
-The responsibilities of this role are listed below and cover a range of activities to better serve our community and enhance the range and scope of our outreach and dissemination activities.
+  MDAnalysis is looking to hire a project, community and outreach manager. This is a remote full-time role on a 2-year contract, with possibility to renew subject to funding availability. The position will ideally start early in 2023.
+  The responsibilities of this role are listed below and cover a range of activities to better serve our community and enhance the range and scope of our outreach and dissemination activities.
 
 
-### Your profile
+  ### Your profile
 
-You are a proactive individual with a positive mindset and a can-do attitude. You have excellent communication skills and organisational/management experience. You are passionate about open source software in STEM and committed to advancing equity, diversity and inclusion in these communities.
-
-
-### Role responsibilities
-
-- **Expanding outreach and mentoring participation.** MDAnalysis has an established track record of participating in various mentoring schemes, including Google Summer of Code, Google Season of Docs, and Outreachy. You will undertake key administrative tasks for these schemes, including; applying on MDAnalysis’s behalf, coordinating the project participation, contributing to the participant selection and supervising mentoring efforts. In addition, you will review and propose additional mentoring schemes MDAnalysis could participate in.
-
-- **Organising online workshops.** Together with the developer team, you will organise and help deliver a series of online workshops aimed at introducing new researchers in academia and industry to MDAnalysis, and showcasing how it can be integrated in their analysis workflows.
-
-- **Organising user group meetings (UGMs).** You will be tasked with organising one in-person user group meeting per year. UGMs are aimed at bringing together users and developers of the MDAnalysis package from different communities.
-
-- **ommunity bridge building.** You will build, maintain, and develop relationships between different open source projects in the computational chemistry/biophysics space to establish collaborations and coordinate development in a synergistic direction. This includes attending and representing MDAnalysis at community forums for other open source projects.
-
-- **Industrial partnerships.** A key goal of the project is to open up additional funding streams to sustain the project over the long term. To this end, you will build relationships with industrial partners, surveying their interest in adopting MDAnalysis and collecting information on desired features.
- 
-- **Communicating with users and developers.** You will be responsible for updating the website, publishing blog posts, managing social media accounts and the Discord server, monitoring and communicating with users and developers on the mailing lists.
-
-- **Project management tasks.** You will manage and coordinate developer meetings, and provide administrative support to the project. This may include coordinating grant submission, liaising with funders and/or NumFOCUS. You will gather relevant metrics related to the project, which may include surveying users/developers.
+  You are a proactive individual with a positive mindset and a can-do attitude. You have excellent communication skills and organisational/management experience. You are passionate about open source software in STEM and committed to advancing equity, diversity and inclusion in these communities.
 
 
+  ### Role responsibilities
 
-### Salary
+  - **Expanding outreach and mentoring participation.** MDAnalysis has an established track record of participating in various mentoring schemes, including Google Summer of Code, Google Season of Docs, and Outreachy. You will undertake key administrative tasks for these schemes, including; applying on MDAnalysis’s behalf, coordinating the project participation, contributing to the participant selection and supervising mentoring efforts. In addition, you will review and propose additional mentoring schemes MDAnalysis could participate in.
 
-$75,000 + benefits (up to $96,000 gross). Exact take-home pay will depend on the tax laws of the country of residence.
-Please note we are unable to arrange visas or work permits.
+  - **Organising online workshops.** Together with the developer team, you will organise and help deliver a series of online workshops aimed at introducing new researchers in academia and industry to MDAnalysis, and showcasing how it can be integrated in their analysis workflows.
 
-### Location
+  - **Organising user group meetings (UGMs).** You will be tasked with organising one in-person user group meeting per year. UGMs are aimed at bringing together users and developers of the MDAnalysis package from different communities.
 
-This is a fully remote opportunity, with core team members in North America, Australasia and Europe and a global community of contributors. Due to the global span of the MDAnalysis community, this work will require working outside of the conventional 9-to-5 work day, for instance when attending team meetings.
+  - **ommunity bridge building.** You will build, maintain, and develop relationships between different open source projects in the computational chemistry/biophysics space to establish collaborations and coordinate development in a synergistic direction. This includes attending and representing MDAnalysis at community forums for other open source projects.
 
+  - **Industrial partnerships.** A key goal of the project is to open up additional funding streams to sustain the project over the long term. To this end, you will build relationships with industrial partners, surveying their interest in adopting MDAnalysis and collecting information on desired features.
 
-### Required criteria
+  - **Communicating with users and developers.** You will be responsible for updating the website, publishing blog posts, managing social media accounts and the Discord server, monitoring and communicating with users and developers on the mailing lists.
 
-- Excellent communication and interpersonal skills
-
-- Familiarity with open source software related to any scientific discipline
-
-- Awareness and understanding of Diversity, Equity and Inclusion (DEI) initiatives and
-themes
-
-- Organisational experience e.g., workshop/seminar/conferences, grant management,
-cross-institutional collaborations
+  - **Project management tasks.** You will manage and coordinate developer meetings, and provide administrative support to the project. This may include coordinating grant submission, liaising with funders and/or NumFOCUS. You will gather relevant metrics related to the project, which may include surveying users/developers.
 
 
-### Desired criteria
+  ### Salary
 
-- Familiarity with computational chemistry software
+  $75,000 + benefits (up to $96,000 gross). Exact take-home pay will depend on the tax laws of the country of residence.
+  Please note we are unable to arrange visas or work permits.
 
-- Familiarity with Python (or similar) and Jupyter notebooks
+  ### Location
 
-- Familiarity with version control software and GitHub
+  This is a fully remote opportunity, with core team members in North America, Australasia and Europe and a global community of contributors. Due to the global span of the MDAnalysis community, this work will require working outside of the conventional 9-to-5 work day, for instance when attending team meetings.
 
-- Software development experience
+  ### Required criteria
 
-- Experience with coding documentation frameworks, (e.g. sphinx, jekyll, Markdown)
+  - Excellent communication and interpersonal skills
 
-- Experience with grant submission and management
+  - Familiarity with open source software related to any scientific discipline
 
-- Experience in leading or supporting initiatives or events focused on DEI
+  - Awareness and understanding of Diversity, Equity and Inclusion (DEI) initiatives and
+  themes
 
+  - Organisational experience e.g., workshop/seminar/conferences, grant management,
+  cross-institutional collaborations
 
-### How to apply
+  ### Desired criteria
 
-Send your CV (including 2 references) and a cover letter illustrating how your experience and qualifications match the job description to jobs@mdanalysis.org using the subject line: “CZI project manager”. 
-We will start reviewing applications on an ongoing basis from December 15th.
+  - Familiarity with computational chemistry software
+
+  - Familiarity with Python (or similar) and Jupyter notebooks
+
+  - Familiarity with version control software and GitHub
+
+  - Software development experience
+
+  - Experience with coding documentation frameworks, (e.g. sphinx, jekyll, Markdown)
+
+  - Experience with grant submission and management
+
+  - Experience in leading or supporting initiatives or events focused on DEI
+
+  ### How to apply
+
+  Send your CV (including 2 references) and a cover letter illustrating how your experience and qualifications match the job description to jobs@mdanalysis.org using the subject line: “CZI project manager”. 
+  We will start reviewing applications on an ongoing basis from December 15th.
