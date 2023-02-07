@@ -11,7 +11,8 @@ import filterJobs from '../filter-jobs.js';
 
 const defaultFormValues = {
   fullTime: false,
-  ossTimeGt: 0
+  ossTimeGt: 0,
+  showExpired: false
 };
 
 const JobsFilter = () => {
@@ -33,6 +34,11 @@ const JobsFilter = () => {
               <input type="checkbox" {...register('fullTime')} />
               Full-time
             </label>
+            <label>
+              <input type="checkbox" {...register('showExpired')} />
+              Expired
+            </label>
+
 
             <div className="section">
               Open Source
