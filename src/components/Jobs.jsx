@@ -3,7 +3,7 @@ import React from "react";
 import Job from './Job';
 
 const Jobs = ({ jobs }) => {
-  if (jobs.length == 0) {
+  if (jobs.length === 0) {
     return (
       <div className="jobList">
         <div className="noJobs">
