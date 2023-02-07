@@ -141,3 +141,8 @@ a {
 .badge:hover .tooltip {
   visibility: visible;
 }
+.noJobs {
+  padding: 2rem;
+  font-size: 200%;
+  color: gray;
+}
