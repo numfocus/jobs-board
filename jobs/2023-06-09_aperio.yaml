@@ -1,0 +1,16 @@
+entity: Aperio Software
+title: Research Software Engineer
+url: https://aperiosoftware.com
+percentTime: 100
+percentOSS: 80
+deadline: 2023-07-03  # Application deadline
+expires: 2023-08-03   # Date when post is removed from board
+location: Remote
+description: |
+  Aperio Software is a company that specialises in developing software and providing software training in scientific domains for a variety of organisations and open source projects.
+  Past and current projects include the development of user tools and calibration software for the Daniel K. Inouye Solar Telescope (DKIST), work on the AAS WorldWide Telescope project, contributions to the Astropy and SunPy projects, and development of the glue visualisation tool.
+
+  Aperio is seeking a research software engineer and experienced open-source contributor to work with us on our growing number of projects in solar physics and astronomy, primarily in established open-source projects.
+  This will include working on the development, testing, documentation and maintenance of several different software packages and related infrastructure.
+  You will be required to liaise with clients, other staff, and the open-source community. 
+  For more details see the full job description at [aperiosoftware.com/jobs](https://aperiosoftware.com/jobs).
