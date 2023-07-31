@@ -1,0 +1,71 @@
+entity: Company or group name
+title: Research Software Engineer
+url: https://www.astropy.org/
+percentTime: 50-100
+percentOSS: 100
+deadline: 2023-08-15  # Application deadline
+expires: 2023-08-31  # Date when post is removed from board
+location: Remote
+description: |
+  ## About Astropy:
+  The Astropy Project is a community effort to develop a common core package for Astronomy in Python and
+  foster an ecosystem of interoperable astronomy packages. It is a widely used package in professional
+  astronomy supporting missions like NASA’s James Webb Space Telescope and the Square Kilometer Array.
+  Our community has over 1,200 members with nearly 200 active weekly. The majority of our members are based
+  in the US but many are from around the world. For more about the project goals, please look at our
+  [roadmap](https://github.com/astropy/astropy-project/blob/main/roadmap/roadmap.md).
+
+  ## About the Position:
+  The Astropy Project is seeking to hire a full-time or part-time research software engineer to develop
+  and implement new features that the community has identified as high priorities in the
+  [roadmap](https://github.com/astropy/astropy-project/blob/main/roadmap/roadmap.md)
+  but that the volunteer contributors do not have the capacity to deliver, as well as address smaller,
+  but long-standing bugs and issues in the astropy core package and the coordinated packages.
+  This is the first time that the Astropy Project itself does a dedicated hire for this purpose,
+  and thus it offers many opportunities to help build the role itself. As such, a driven and
+  resourceful individual with experience in integrating with a mostly volunteer-run project would be
+  best suited for the role. If you are passionate about writing good software in the context of
+  open source software communities read on and apply. Applications before August 15th 2023 will
+  receive full consideration, but applications are accepted until the position is filled.
+
+  ### Key responsibilities of the role:
+  - Debug and fix exiting issues in the astropy core and other packages in the Astropy ecosystem.
+  - Plan, propose, discuss, and implement features as listed in the project roadmap](https://github.com/astropy/astropy-project/blob/main/roadmap/roadmap.md).
+  - Revise documentation for developers and suggest and implement improvements to the workflow and tools to reduce workload on existing maintainers and barriers to entry for new developers.
+  - Study and improve one or more of the infrastructure packages through pull requests and support the existing infrastructure team in ongoing maintenance
+  - Interact with other developers on github, slack, and in developer telecons
+  - Constructively review code and pull requests
+
+  ### The ideal candidate would have these skills:
+  - Collaborative attitude.
+  - Experience with a consensus-driven, geographically-dispersed software development team.
+  - Experience in the scientific Python stack (Python, numpy, matplotlib)
+  - Experience with continuous integration, writing tests, debugging, and pytest
+  - Experience with git and github
+  - Knowledge of scientific community engagement techniques
+
+  ## Desired Qualifications, but not necessary experiences include:
+  - Ability to motivate others to step up for long-term involvement in the project
+  - Experience in Python documentation and sphinx
+  - Experience in one or more languages used for compiled Python extensions (C, Cython, rust)
+  - Simple html/css skills
+  - Ability to positively interact with other contributors and offer advice, review, and mentorship to enhance the knowledge and ability of others
+  - Experience working with a multicultural, international community
+  - Experience in documenting workflows for new contributors and maintainers
+  - Knowledge of astronomy
+
+  ## Compensation and Term:
+  The software developer is funded by the Astropy Project through NumFocus;
+  you will invoice NumFOCUS for hours worked as an independent contractor.
+  The total funding available is US$75,000 to be spent by March 31, 2024.
+  Depending on experience, we envision an hourly rate in the range 60-120 $/h,
+  which is about 20-40 h/week for the period September 1st to March 31st.
+  A lower level of effort or slightly longer time range can be accommodated,
+  if explicitly requested in the application. There is a possibility of further
+  extension: We would like this role to continue in the future, but this depends on
+  funding and feedback from the community. This work is fully remote and can be done anywhere on Earth.
+
+  ## How to Apply:
+  In order to apply, please send a cover letter, one page resume (ideally with links to previous pull requests or other contributions to open source projects), and a list of 2-3 names and contact information for people who have agreed to serve as a reference to Moritz Günther at moritz.guenther@gmx.de with the subject line “Research Software engineer” and your last name.
+  For questions about this position, please contact Moritz Günther at moritz.guenther@gmx.de.
+
