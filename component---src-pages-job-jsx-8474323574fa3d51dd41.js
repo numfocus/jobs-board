@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjobs_board=self.webpackChunkjobs_board||[]).push([[439],{590:function(e,t,n){n.r(t);var o=n(7294),r=n(1082),a=n(7025),l=n(9135);t.default=e=>{let{pageContext:t}=e;const{job:n}=t;return o.createElement(a.Z,null,o.createElement(l.Z,{job:n}),"Return to ",o.createElement(r.rU,{to:"/"},"jobs listing"),".")}}}]);
+//# sourceMappingURL=component---src-pages-job-jsx-8474323574fa3d51dd41.js.map
