@@ -64,6 +64,13 @@ a {
   margin-bottom: 0.5rem;
   padding-top: 1rem;
 }
+@media screen and (max-width: 600px) {
+  /* Adjust styles for screens narrower than 600px */
+  .section {
+    font-size: 1.2rem;
+    display: block;
+  }
+}
 .reset {
   margin-top: 2rem;
   background: gray;
