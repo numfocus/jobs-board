@@ -1,50 +1,50 @@
 entity: Quansight LLC
-title: 	Senior Open Source Infrastructure Engineer
+title: Senior Open Source Infrastructure Engineer
 url: www.quansight.com/careers
 percentTime: 100
 percentOSS: 100
-deadline: 2024-8-1  # Application deadline
-expires: 2024-8-1   # Date when post is removed from board
+deadline: 2024-08-01  # Application deadline
+expires: 2024-08-01   # Date when post is removed from board
 location: Remote
 description: |
-We are seeking a fully remote, Senior Open Source Infrastructure Engineer to join our team at Quansight. 
-In this role, you will support Quansights growing cloud and on-premises infrastructure and help make them more reliable, scalable, and efficient. You will work with our team to address support issues from our clients and collaborators, explore emerging technologies in the Cloud and DevOps spaces, and design and implement cloud computing systems with the rest of our infrastructure team.
+  We are seeking a fully remote, Senior Open Source Infrastructure Engineer to join our team at Quansight. 
+  In this role, you will support Quansights growing cloud and on-premises infrastructure and help make them more reliable, scalable, and efficient. You will work with our team to address support issues from our clients and collaborators, explore emerging technologies in the Cloud and DevOps spaces, and design and implement cloud computing systems with the rest of our infrastructure team.
 
-In this position, you'll get to
-Contribute to nebari (https://nebari.dev), an open source Data Science platform built on JupyterHub, Dask, and other tools from the PyData ecosystem. Nebari uses Terraform and Helm to deploy these tools to Kubernetes in multiple clouds and on premises.
-Participate in upstream open source communities we rely on (such as JupyterHub, BinderHub, Dask, etc.) in partnership with the established leaders of those communities.
-Deploy and ensure the reliable operation of Quansights and clients infrastructure under the direction of senior team members.
-Collaborate with a fully distributed team - team members are expected to communicate and collaborate proactively to allocate effort and maximize the teams impact.
-Position Requirements
-Required:
-Experience using infrastructure-as-code tooling such as Terraform, Pulumi, Cloudformation to deploy infrastructure.
-Experience running production workloads in at least one major cloud platform (AWS, Azure, GCP)
-Experience developing tools in a general purpose programming language (eg. Python).
-Experience building Continuous Integration and Continuous Delivery (CI/CD) pipelines using tools such as GitHub actions, Gitlab CI/CD, Circle CI, etc.
-Familiarity with modern software engineering practices  including automated tests, code review, version control, observability, etc.
-Experience containerizing and deploying applications to platforms such as Kubernetes, AWS ECS, and Google Cloud Run.
-Comfortable working independently and reaching out for feedback and support as needed.
-Experience collaborating and coordinating work via online platforms, such as GitHub, GitLab, or BitBucket, and distributed revision control.
-Ability to constructively receive feedback.
+  In this position, you'll get to
+  Contribute to nebari (https://nebari.dev), an open source Data Science platform built on JupyterHub, Dask, and other tools from the PyData ecosystem. Nebari uses Terraform and Helm to deploy these tools to Kubernetes in multiple clouds and on premises.
+  Participate in upstream open source communities we rely on (such as JupyterHub, BinderHub, Dask, etc.) in partnership with the established leaders of those communities.
+  Deploy and ensure the reliable operation of Quansights and clients infrastructure under the direction of senior team members.
+  Collaborate with a fully distributed team - team members are expected to communicate and collaborate proactively to allocate effort and maximize the teams impact.
+  Position Requirements
+  Required:
+  Experience using infrastructure-as-code tooling such as Terraform, Pulumi, Cloudformation to deploy infrastructure.
+  Experience running production workloads in at least one major cloud platform (AWS, Azure, GCP)
+  Experience developing tools in a general purpose programming language (eg. Python).
+  Experience building Continuous Integration and Continuous Delivery (CI/CD) pipelines using tools such as GitHub actions, Gitlab CI/CD, Circle CI, etc.
+  Familiarity with modern software engineering practices  including automated tests, code review, version control, observability, etc.
+  Experience containerizing and deploying applications to platforms such as Kubernetes, AWS ECS, and Google Cloud Run.
+  Comfortable working independently and reaching out for feedback and support as needed.
+  Experience collaborating and coordinating work via online platforms, such as GitHub, GitLab, or BitBucket, and distributed revision control.
+  Ability to constructively receive feedback.
 
-While this is a remote position, we are looking for candidates with significant time overlap with US Central and Eastern time zones due to the location of many of our infrastructure team members and collaborators
+  While this is a remote position, we are looking for candidates with significant time overlap with US Central and Eastern time zones due to the location of many of our infrastructure team members and collaborators
 
-Bonus points (not required, but these would be a great advantage)
-Experience working on geographically distributed teams.
-Experience working with or contributing to open-source projects.
-Exposure to the Python Data Science stack - Pandas, Numpy, Dask, etc.
-Experience with the Jupyter ecosystem and other tools for interactive computing.
-Experience with common data science methods, platforms, workflows, and infrastructures; with data management systems, practices, and standards; and the capacity to gain familiarity with new related topics.
-Experience with Machine Learning Operations (MLOps) platforms, workflows, and infrastructures and the capacity to gain familiarity with new related topics.
-Candidate journey
-Application: Once you have applied, a recruiter will review your application to determine if your work experience and skills align with the necessary competencies of this position. This recruiter will be in touch to schedule some time to connect if they determine that you could be a good fit for Quansight.
-HR interview: This is an opportunity to get to know each other. We will tell you a little more about who we are, and we look forward to hearing about your past experiences and what you are looking for in your next role. We want to know why you are interested in joining us and what questions you have about our team and mission. This will be scheduled as a 30-minute Google Meet.
-Interview loop: If you and your recruiter still feel you could be well-suited for this position following your call, we will arrange our interview loop with some team members. This will allow you to learn more about the team and the organization and for us to gain a deeper understanding of your skills and experience. For this particular role, the interview loop is as follows:
-Pre-Interview Assignment: Please choose one out of the three following options to complete prior to interviewing with our team.
-Take Home Assessment. We will share a github repository with you that includes instructions for an infrastructure related task. You will create a Pull Request (PR) for us to review that accomplishes the task as specified.Please only devote up to 4 hours on this assignment.
-Point us to a substantial, public, infrastructure related Pull Request that you have authored and come prepared for a code walkthrough during your interview
-Send us another infrastructure related codebase you have written and come prepared for a code walkthrough during your interview
-Technical interviews: we will schedule two separate interviews with Quansight team members (these will be potential teammates or cross-functional team members.)
-Hiring manager interview: in this one-hour interview, you will meet the hiring manager for this position. Questions in this interview will focus on your career, how you handle certain situations and your general approach to collaboration and work. We also factor in time for you to ask questions about the role and the organization.
+  Bonus points (not required, but these would be a great advantage)
+  Experience working on geographically distributed teams.
+  Experience working with or contributing to open-source projects.
+  Exposure to the Python Data Science stack - Pandas, Numpy, Dask, etc.
+  Experience with the Jupyter ecosystem and other tools for interactive computing.
+  Experience with common data science methods, platforms, workflows, and infrastructures; with data management systems, practices, and standards; and the capacity to gain familiarity with new related topics.
+  Experience with Machine Learning Operations (MLOps) platforms, workflows, and infrastructures and the capacity to gain familiarity with new related topics.
+  Candidate journey
+  Application: Once you have applied, a recruiter will review your application to determine if your work experience and skills align with the necessary competencies of this position. This recruiter will be in touch to schedule some time to connect if they determine that you could be a good fit for Quansight.
+  HR interview: This is an opportunity to get to know each other. We will tell you a little more about who we are, and we look forward to hearing about your past experiences and what you are looking for in your next role. We want to know why you are interested in joining us and what questions you have about our team and mission. This will be scheduled as a 30-minute Google Meet.
+  Interview loop: If you and your recruiter still feel you could be well-suited for this position following your call, we will arrange our interview loop with some team members. This will allow you to learn more about the team and the organization and for us to gain a deeper understanding of your skills and experience. For this particular role, the interview loop is as follows:
+  Pre-Interview Assignment: Please choose one out of the three following options to complete prior to interviewing with our team.
+  Take Home Assessment. We will share a github repository with you that includes instructions for an infrastructure related task. You will create a Pull Request (PR) for us to review that accomplishes the task as specified.Please only devote up to 4 hours on this assignment.
+  Point us to a substantial, public, infrastructure related Pull Request that you have authored and come prepared for a code walkthrough during your interview
+  Send us another infrastructure related codebase you have written and come prepared for a code walkthrough during your interview
+  Technical interviews: we will schedule two separate interviews with Quansight team members (these will be potential teammates or cross-functional team members.)
+  Hiring manager interview: in this one-hour interview, you will meet the hiring manager for this position. Questions in this interview will focus on your career, how you handle certain situations and your general approach to collaboration and work. We also factor in time for you to ask questions about the role and the organization.
 
-Following the completion of all interviews, our hiring team will make a final decision, and the recruiter will be in touch to share the outcome of your interviews. If the team wants to move forward, the recruiter will discuss this and the details of our proposed offer with you.
+  Following the completion of all interviews, our hiring team will make a final decision, and the recruiter will be in touch to share the outcome of your interviews. If the team wants to move forward, the recruiter will discuss this and the details of our proposed offer with you.
