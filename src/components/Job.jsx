@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link } from "next/link";
 
 import Badge from "./Badge";
 import jobToMarkdown from "../jobToMarkdown.js";

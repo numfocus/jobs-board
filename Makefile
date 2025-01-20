@@ -5,7 +5,7 @@ jobs:
 	python tools/bundle_posts.py
 
 develop: jobs
-	gatsby develop
+	next dev
 
 build: jobs
-	gatsby build
+	next build
