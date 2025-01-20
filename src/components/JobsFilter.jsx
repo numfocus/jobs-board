@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Jobs from "./Jobs";
 import HowToPost from "./HowToPost";
 
-import jobData from '../jobs.js';
+import jobData from '../../jobs/';
 import filterJobs from '../filter-jobs.js';
 
 
