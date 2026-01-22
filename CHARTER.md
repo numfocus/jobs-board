@@ -41,9 +41,9 @@ following technologies:
 The website is compiled by running `make`, which executes the following steps:
 
 1. `tools/bundle_posts.py`: This aggregates all posts from `jobs/*.yaml` and
-   produces `src/jobs.js`.
+   produces `src/jobs.mjs`.
 2. Gatsby compiles the website.  It also creates a single page per
-   post (so that each post gets a static URL) (see `gatsby-node.esm.js`).
+   post (so that each post gets a static URL) (see `gatsby-node.mjs`).
 
 Frontend filtering is done via JavaScript.  Filters are defined in
 `src/filter-jobs.js` and the accompanying frontend lives in

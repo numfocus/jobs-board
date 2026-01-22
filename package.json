@@ -15,14 +15,13 @@
   },
   "dependencies": {
     "dompurify": "2.2.2",
-    "gatsby": "^4.24.4",
+    "gatsby": "^5.14.0",
     "marked": "^4.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.34.2"
   },
   "devDependencies": {
-    "esm": "3.2.25",
     "prettier": "2.1.2"
   },
   "repository": {
