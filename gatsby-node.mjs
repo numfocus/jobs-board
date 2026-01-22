@@ -1,4 +1,4 @@
-import jobs from "./src/jobs.js";
+import jobs from "./src/jobs.mjs";
 import path from "path";
 
 export const createPages = async ({ graphql, actions }) => {

@@ -38,7 +38,7 @@ for job in glob.glob('jobs/*.yaml'):
 
 jobs = list(sorted(jobs, key=lambda x: x['date'], reverse=True))
 
-outfile = 'src/jobs.js'
+outfile = 'src/jobs.mjs'
 with open(outfile, 'w') as f:
     f.write('const jobs = ')
     f.write(JSONEncoder().encode(jobs))
