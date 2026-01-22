@@ -16,7 +16,9 @@ const defaultFormValues = {
 };
 
 const JobsFilter = () => {
-  const { register, watch, reset } = useForm();
+  const { register, watch, reset } = useForm({
+    defaultValues: defaultFormValues
+  });
   const formData = watch();
 
   const jobs = filterJobs(jobData, formData);

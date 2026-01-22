@@ -6,54 +6,54 @@ import jobToMarkdown from "../jobToMarkdown.js";
 
 
 const Job = ({ job }) => {
-  if (job === undefined) {
+  const processedJob = React.useMemo(() => jobToMarkdown(job), [job]);
+
+  if (processedJob === undefined) {
     console.log("We don't expect an empty job posting; aborting");
     return <div>Empty job posting</div>;
   }
 
-  job = jobToMarkdown(job);
   return (
     <div className="job">
       <div className="badges">
-        { job.badges &&
-          job.badges.map((badge) =>
+        { processedJob.badges &&
+          processedJob.badges.map((badge) =>
             <Badge key={badge} type={badge}/>
           )
         }
-        { (job.percentOSS === 100) &&
+        { (processedJob.percentOSS === 100) &&
           <Badge type="Pure OSS"/>
         }
       </div>
-      <Link to={`/job/${job.id}`}>
-        <div className="title">{ job.entity } / { job.title }</div>
+      <Link to={`/job/${processedJob.id}`}>
+        <div className="title">{ processedJob.entity } / { processedJob.title }</div>
       </Link>
       <div className="meta">
-        { job.percentTime &&
-          <div className="percentTime">This job is <b>{ job.percentTime }%</b> time.</div>
+        { processedJob.percentTime &&
+          <div className="percentTime">This job is <b>{ processedJob.percentTime }%</b> time.</div>
         }
         <div className="percentOSS">
-          <b>{ job.percentOSS }%</b> of time is on <b>open source</b>.
+          <b>{ processedJob.percentOSS }%</b> of time is on <b>open source</b>.
         </div>
-        { job.deadline &&
+        { processedJob.deadline &&
           <div className="deadline">
-            Application deadline: <b>{ job.deadline }</b>
+            Application deadline: <b>{ processedJob.deadline }</b>
           </div>
         }
-        { job.location &&
+        { processedJob.location &&
           <div className="location">
-            Location: { job.location }
+            Location: { processedJob.location }
           </div>
         }
-        { job.url &&
+        { processedJob.url &&
           <div className="url">
-            URL: <a href={job.url}>{ job.url }</a>
+            URL: <a href={processedJob.url}>{ processedJob.url }</a>
           </div>
         }
       </div>
       <div
         className="description"
-        key={ job.id }
-        dangerouslySetInnerHTML={{__html: job.description}}
+        dangerouslySetInnerHTML={{__html: processedJob.description}}
       />
     </div>
   );
