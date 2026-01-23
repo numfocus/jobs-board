@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Badge from "./Badge";
-import jobToMarkdown from "../jobToMarkdown.js";
+import jobToMarkdown from "../jobToMarkdown.mjs";
 
 
 const Job = ({ job }) => {

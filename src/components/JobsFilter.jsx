@@ -6,7 +6,7 @@ import Jobs from "./Jobs";
 import HowToPost from "./HowToPost";
 
 import jobData from '../jobs.mjs';
-import filterJobs from '../filter-jobs.js';
+import filterJobs from '../filter-jobs.mjs';
 
 
 const defaultFormValues = {
