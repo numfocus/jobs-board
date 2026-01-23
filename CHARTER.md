@@ -46,5 +46,5 @@ The website is compiled by running `make`, which executes the following steps:
    post (so that each post gets a static URL) (see `gatsby-node.mjs`).
 
 Frontend filtering is done via JavaScript.  Filters are defined in
-`src/filter-jobs.js` and the accompanying frontend lives in
+`src/filter-jobs.mjs` and the accompanying frontend lives in
 `src/components/JobsFilter.jsx`.

@@ -5,7 +5,7 @@ import Page from '../components/Page';
 import Job from '../components/Job';
 
 // pageContext comes from createPage in
-// gatsby-node.esm.js
+// gatsby-node.mjs
 const job = ({ pageContext }) => {
   const { job } = pageContext;
   return (

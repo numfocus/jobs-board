@@ -1,7 +1,7 @@
 import { marked } from 'marked';
+import DOMPurify from 'dompurify';
 
-const DOMPurify = (typeof window !== 'undefined') ? require('dompurify') : undefined;
-const sanitize = (DOMPurify && DOMPurify.sanitize) ? DOMPurify.sanitize : (x, y) => x;
+const sanitize = (typeof window !== 'undefined' && DOMPurify && DOMPurify.sanitize) ? DOMPurify.sanitize : (x, y) => x;
 
 export const jobToMarkdown = (job) => {
   if (!job) return job;
