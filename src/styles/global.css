@@ -54,10 +54,16 @@ a {
   min-width: 9rem;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 .filter {
   background: #eee;
   padding: 2rem;
+}
+.filter label {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: 0.5rem;
 }
 .section {
   font-weight: bold;
@@ -86,6 +92,7 @@ a {
 .jobList {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 .job {
   width: 30rem;
