@@ -27,7 +27,6 @@ li {
 a {
   color: #2c3e50;
   font-weight: bold;
-  text-decoration: none;
 }
 .page {
 }
@@ -114,8 +113,18 @@ a {
   bottom: 1rem;
   right: 1rem;
 }
+.expired-banner {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
 .job a {
-  text-decoration: none;
 }
 .job .meta a {
   font-weight: normal;

@@ -8,6 +8,12 @@ import jobToMarkdown from "../jobToMarkdown.js";
 const Job = ({ job }) => {
   const processedJob = React.useMemo(() => jobToMarkdown(job), [job]);
 
+  const isExpired = React.useMemo(() => {
+    if (!processedJob || !processedJob.expires) return false;
+    const today = new Date();
+    return new Date(`${processedJob.expires}T23:59:59.999-12:00`) < today;
+  }, [processedJob]);
+
   if (processedJob === undefined) {
     console.log("We don't expect an empty job posting; aborting");
     return <div>Empty job posting</div>;
@@ -51,6 +57,11 @@ const Job = ({ job }) => {
           </div>
         }
       </div>
+      {isExpired && (
+        <div className="expired-banner">
+          This job post has expired and is no longer open for applications.
+        </div>
+      )}
       <div
         className="description"
         dangerouslySetInnerHTML={{__html: processedJob.description}}
