@@ -30,6 +30,26 @@ for job in glob.glob('jobs/*.yaml'):
         sys.exit(1)
 
     post = yaml.load(open(job, "r"), Loader=yaml.Loader)
+
+    expires = post.get('expires')
+    if not expires:
+        print(f'\nError: Missing "expires" field in {job}.')
+        sys.exit(1)
+
+    if not isinstance(expires, datetime.date):
+        # Try to parse expiry date, in case YAML loader didn't do so already
+        try:
+            expires = datetime.date.fromisoformat(str(expires))
+        except ValueError:
+            print(f'\nError: Invalid "expires" date format in {job}: {expires}. Use YYYY-MM-DD.')
+            sys.exit(1)
+
+    # Normalize datetime to date (no time) to avoid timestamp issues in JS
+    if isinstance(expires, datetime.datetime):
+        print(f'\nStripping timestamp from expiry date in {job}: {expires}')
+        expires = expires.date()
+
+    post['expires'] = expires
     post['date'] = date
     post['id'] = os.path.splitext(os.path.basename(job))[0]
 
