@@ -3,16 +3,15 @@ import { Link } from "gatsby";
 
 import Badge from "./Badge";
 import jobToMarkdown from "../jobToMarkdown.mjs";
+import { isJobExpired } from "../utils.mjs";
 
 
 const Job = ({ job }) => {
   const processedJob = React.useMemo(() => jobToMarkdown(job), [job]);
 
   const isExpired = React.useMemo(() => {
-    if (!processedJob || !processedJob.expires) return false;
-    const today = new Date();
-    return new Date(`${processedJob.expires}T23:59:59.999-12:00`) < today;
-  }, [processedJob]);
+    return isJobExpired(job);
+  }, [job]);
 
   if (processedJob === undefined) {
     console.log("We don't expect an empty job posting; aborting");
@@ -20,7 +19,7 @@ const Job = ({ job }) => {
   }
 
   return (
-    <div className="job">
+    <div className={`job${isExpired ? " expired" : ""}`}>
       <div className="badges">
         { processedJob.badges &&
           processedJob.badges.map((badge) =>

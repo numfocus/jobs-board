@@ -1,17 +1,21 @@
+import { isJobExpired } from "./utils.mjs";
+
 const filterJobs = (jobs, filter) => {
-  // Filter out expired jobs.  Use Howland Island timezone to ensure
-  // that everyone sees the job on its last day.
   const today = new Date();
+
+  // Filter out expired jobs if requested.
   if (!filter.showExpired) {
-    jobs = jobs.filter((job) => new Date(`${job.expires}T23:59:59.999-12:00`) > today)
+    jobs = jobs.filter((job) => !isJobExpired(job, today));
   }
 
   if (filter.fullTime) {
-    jobs = jobs.filter((job) => job.percentTime === 100)
+    jobs = jobs.filter((job) => job.percentTime === 100);
   }
 
   if (filter.ossTimeGt) {
-    jobs = jobs.filter((job) => job.percentOSS >= parseInt(filter.ossTimeGt))
+    // Ensure we're comparing numbers
+    const minOSS = parseInt(filter.ossTimeGt, 10);
+    jobs = jobs.filter((job) => job.percentOSS >= minOSS);
   }
 
   if (filter.remote) {
@@ -22,6 +26,6 @@ const filterJobs = (jobs, filter) => {
   }
 
   return jobs;
-}
+};
 
 export default filterJobs;
