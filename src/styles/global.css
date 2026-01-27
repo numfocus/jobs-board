@@ -77,6 +77,12 @@ a {
   padding: 0.5rem 1rem 0.5rem 1rem;
   width: 100%;
 }
+.count {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
 .howToPost {
   background: #007d8a;
   color: white;

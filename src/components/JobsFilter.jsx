@@ -11,7 +11,7 @@ import filterJobs from '../filter-jobs.mjs';
 
 const defaultFormValues = {
   fullTime: false,
-  ossTimeGt: 0,
+  ossTimeGt: "0",
   showExpired: false,
   remote: false
 };
@@ -23,6 +23,8 @@ const JobsFilter = () => {
   const formData = watch();
 
   const jobs = filterJobs(jobData, formData);
+
+  const isFiltered = JSON.stringify(formData) !== JSON.stringify(defaultFormValues);
 
   return (
     <div className="jobsLayout">
@@ -74,6 +76,11 @@ const JobsFilter = () => {
               Reset
             </button>
           </form>
+          {isFiltered && (
+            <div className="count">
+              Displaying {jobs.length} / {jobData.length} entries.
+            </div>
+          )}
         </div>
         <HowToPost/>
       </div>
