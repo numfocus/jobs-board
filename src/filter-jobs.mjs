@@ -15,7 +15,10 @@ const filterJobs = (jobs, filter) => {
   }
 
   if (filter.remote) {
-    jobs = jobs.filter((job) => (job.location || 'remote').toLowerCase() === 'remote' );
+    // Matches "remote", "Remote (US)", "London / Remote", etc.
+    jobs = jobs.filter((job) =>
+      (job.location || "remote").toLowerCase().includes("remote")
+    );
   }
 
   return jobs;
