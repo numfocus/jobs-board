@@ -24,6 +24,8 @@ const JobsFilter = () => {
 
   const jobs = filterJobs(jobData, formData);
 
+  const isFiltered = JSON.stringify(formData) !== JSON.stringify(defaultFormValues);
+
   return (
     <div className="jobsLayout">
       <div className="leftColumn">
@@ -74,6 +76,11 @@ const JobsFilter = () => {
               Reset
             </button>
           </form>
+          {isFiltered && (
+            <div className="count">
+              Displaying {jobs.length} / {jobData.length} entries.
+            </div>
+          )}
         </div>
         <HowToPost/>
       </div>
