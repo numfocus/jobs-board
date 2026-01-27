@@ -12,7 +12,8 @@ import filterJobs from '../filter-jobs.mjs';
 const defaultFormValues = {
   fullTime: false,
   ossTimeGt: 0,
-  showExpired: false
+  showExpired: false,
+  remote: false
 };
 
 const JobsFilter = () => {
