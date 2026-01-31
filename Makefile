@@ -2,7 +2,7 @@
 .DEFAULT_GOAL := build
 
 jobs:
-	python tools/bundle_posts.py
+	python3 tools/bundle_posts.py
 
 develop: jobs
 	gatsby develop
