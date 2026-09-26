@@ -1,0 +1,43 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          npm install
+          npm install -g gatsby
+
+      - name: Build 🔧
+        run: |
+          make build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public
+          SINGLE_COMMIT: true
