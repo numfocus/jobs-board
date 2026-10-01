@@ -1,31 +1,42 @@
-import { isJobExpired } from "./utils.mjs";
+const filterJobs = (jobs, filter) => {  
 
-const filterJobs = (jobs, filter) => {
   const today = new Date();
+  const minOSS = filter.ossTimeGt ? parseInt(filter.ossTimeGt, 10) : null;
 
-  // Filter out expired jobs if requested.
-  if (!filter.showExpired) {
-    jobs = jobs.filter((job) => !isJobExpired(job, today));
-  }
+  return jobs.filter((job) => {
+    if (!filter.showExpired && isJobExpired(job, today)) {
+      return false;
+    }
 
-  if (filter.fullTime) {
-    jobs = jobs.filter((job) => job.percentTime === 100);
-  }
+    if (filter.fullTime && job.percentTime !== 100) {
+      return false;
+    }
 
-  if (filter.ossTimeGt) {
-    // Ensure we're comparing numbers
-    const minOSS = parseInt(filter.ossTimeGt, 10);
-    jobs = jobs.filter((job) => job.percentOSS >= minOSS);
-  }
+    if (minOSS !== null && job.percentOSS < minOSS) {
+      return false;
+    }
 
-  if (filter.remote) {
-    // Matches "remote", "Remote (US)", "London / Remote", etc.
-    jobs = jobs.filter((job) =>
-      (job.location || "remote").toLowerCase().includes("remote")
-    );
-  }
+    if (filter.remote) {
+      const location = (job.location || "").toLowerCase();
+      return location.includes("remote");
+    }
 
-  return jobs;
+    return true;
+  });
 };
 
-export default filterJobs;
+
+// here we consider a job expired if its posted date is more than 30 days old
+const isJobExpired = (job, today) => {
+  if (!job.postedDate) return false; // If no posted date, assume it's not expired
+
+  const postedDate = new Date(job.postedDate);
+  const diffTime = Math.abs(today - postedDate);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+  return diffDays > 30;
+};
+
+export default filterJobs;  
+// we can use this code for mordern js and it will work in node and browser both.
+
