@@ -14,22 +14,23 @@ class JSONEncoder(json.JSONEncoder):
 
 
 jobs = []
-for job in glob.glob('jobs/*.yaml'):
-    if job == 'jobs/template.yaml':
+for job in glob.glob(os.path.join('jobs', '*.yaml')):
+    basename = os.path.basename(job)
+    if basename == 'template.yaml':
         continue
 
     print(f'-> {job}...', end='')
     # We could also allow specification of date inside job post file
     # For now, it is parsed from the filename
     try:
-        date_str = job.split('jobs/')[1].split('_')[0]
+        date_str = basename.split('_')[0]
         date = datetime.date(*(int(x) for x in date_str.split('-')))
     except Exception as e:
         print(f'Exception: {e}')
         print(f'Unable to parse date from filename {job}. Exiting.')
         sys.exit(1)
 
-    post = yaml.load(open(job, "r"), Loader=yaml.Loader)
+    post = yaml.load(open(job, encoding='utf-8'), Loader=yaml.Loader)
 
     expires = post.get('expires')
     if not expires:
@@ -51,7 +52,7 @@ for job in glob.glob('jobs/*.yaml'):
 
     post['expires'] = expires
     post['date'] = date
-    post['id'] = os.path.splitext(os.path.basename(job))[0]
+    post['id'] = os.path.splitext(basename)[0]
 
     jobs.append(post)
     print('OK')
@@ -59,7 +60,7 @@ for job in glob.glob('jobs/*.yaml'):
 jobs = list(sorted(jobs, key=lambda x: x['date'], reverse=True))
 
 outfile = 'src/jobs.mjs'
-with open(outfile, 'w') as f:
+with open(outfile, 'w', encoding='utf-8') as f:
     f.write('const jobs = ')
     f.write(JSONEncoder().encode(jobs))
     f.write('\nexport default jobs;\n')
