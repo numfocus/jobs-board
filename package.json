@@ -4,6 +4,7 @@
   "description": "A simple open source jobs board",
   "version": "0.1.0",
   "license": "BSD-3",
+  "packageManager": "pnpm@12.18.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

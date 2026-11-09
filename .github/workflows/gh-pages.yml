@@ -11,28 +11,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
         with:
           persist-credentials: false
 
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 
-      - uses: actions/setup-node@v2-beta
-        with:
-          node-version: '18'
+      - uses: pnpm/action-setup@v6
 
-      - uses: actions/cache@v4
+      - uses: actions/setup-node@v7
         with:
-          path: |
-            ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('package.json') }}
+          node-version: '26'
+          cache: pnpm
 
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          npm install
+          pnpm install --frozen-lockfile
 
       - name: Build 🔧
         run: |
