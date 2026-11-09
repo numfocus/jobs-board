@@ -18,12 +18,6 @@ Install Python dependencies:
 pip install -r requirements.txt
 ```
 
-Install gatsby:
-
-```shell
-npm install -g gatsby
-```
-
 Install dependencies:
 
 ```shell
