@@ -18,13 +18,11 @@ Install Python dependencies:
 pip install -r requirements.txt
 ```
 
-Keep the normal dependency installation:
-
-```md
 Install dependencies:
 
 ```shell
 npm install
+```
 
 ## Develop
 
