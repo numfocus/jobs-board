@@ -1,13 +1,4 @@
 # Gatsby imports its own dependencies from generated code, so it needs a flat node_modules.
 nodeLinker: hoisted
-# Prebuilt binaries cover the native packages; their install scripts are not needed.
-allowBuilds:
-  "@parcel/watcher": false
-  core-js: false
-  core-js-pure: false
-  es5-ext: false
-  gatsby: false
-  gatsby-cli: false
-  lmdb: false
-  msgpackr-extract: false
-  sharp: false
+# No dependency needs its install script; prebuilt binaries cover the native packages.
+strictDepBuilds: false
