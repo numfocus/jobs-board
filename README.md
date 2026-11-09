@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Install dependencies:
 
 ```shell
-npm install
+pnpm install
 ```
 
 ## Develop

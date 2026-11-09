@@ -5,7 +5,7 @@ jobs:
 	python3 tools/bundle_posts.py
 
 develop: jobs
-	npm run develop
+	pnpm run develop
 
 build: jobs
-	npm run build
+	pnpm run build
