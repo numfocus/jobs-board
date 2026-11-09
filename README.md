@@ -12,12 +12,6 @@ pull request to this repository.
 
 ## Installation
 
-Install Python dependencies:
-
-```shell
-pip install -r requirements.txt
-```
-
 Install dependencies:
 
 ```shell
@@ -29,7 +23,7 @@ pnpm install
 ```shell
 make develop
 ```
-The site is now running at `http://localhost:8000`
+The site is now running at `http://localhost:5173`
 
 ## Deploy
 
@@ -37,8 +31,10 @@ The site is now running at `http://localhost:8000`
 make build
 ```
 
-The site is generated into `./public`.
+The site is generated into `./build/client`. The build fails if a job
+post does not pass validation.
 
 ## Site generator
 
-This site is generated using [Gatsby](https://gatsbyjs.com)
+This site is generated using [React Router](https://reactrouter.com)
+in framework mode, with all pages prerendered.

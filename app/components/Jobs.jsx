@@ -1,8 +1,6 @@
-import React from "react";
-
 import Job from './Job';
 
-const Jobs = ({ jobs }) => {
+const Jobs = ({ jobs, now }) => {
   if (jobs.length === 0) {
     return (
       <div className="jobList">
@@ -16,7 +14,7 @@ const Jobs = ({ jobs }) => {
     <div className="jobList">
       {
         jobs.map((job) =>
-          <Job job={job} key={job.id}/>
+          <Job job={job} now={now} key={job.id}/>
         )
       }
     </div>

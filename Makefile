@@ -1,11 +1,8 @@
-.PHONY: build develop jobs
+.PHONY: build develop
 .DEFAULT_GOAL := build
 
-jobs:
-	python3 tools/bundle_posts.py
+develop:
+	pnpm run dev
 
-develop: jobs
-	pnpm run develop
-
-build: jobs
+build:
 	pnpm run build
