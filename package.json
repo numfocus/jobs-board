@@ -23,7 +23,7 @@
     "react-hook-form": "7.34.2"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "prettier": "3.9.10"
   },
   "repository": {
     "type": "git",
