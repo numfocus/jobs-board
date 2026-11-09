@@ -5,7 +5,7 @@ jobs:
 	python3 tools/bundle_posts.py
 
 develop: jobs
-	gatsby develop
+	npm run develop
 
 build: jobs
-	gatsby build
+	npm run build
