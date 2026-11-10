@@ -22,10 +22,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.11'
-
       - uses: pnpm/action-setup@v6
 
       - uses: actions/setup-node@v7
@@ -35,7 +31,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
           pnpm install --frozen-lockfile
 
       - name: Build 🔧
@@ -44,7 +39,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: public
+          path: build/client
 
   deploy:
     needs: build

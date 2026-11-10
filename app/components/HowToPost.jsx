@@ -1,5 +1,3 @@
-import React from "react";
-
 const HowToPost = () => (
   <div className="howToPost">
     <p>

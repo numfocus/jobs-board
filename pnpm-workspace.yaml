@@ -1,4 +1,1 @@
-# Gatsby imports its own dependencies from generated code, so it needs a flat node_modules.
-nodeLinker: hoisted
-# No dependency needs its install script; prebuilt binaries cover the native packages.
 strictDepBuilds: false

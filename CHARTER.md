@@ -31,20 +31,20 @@ By default, jobs expire on the day that applications are due.  No job can be act
 
 ## Technical overview
 
-The Jobs Board is a simple static website, rendered from a mixture of
-YAML files (the jobs posts), and HTML templates.  It relies on the
-following technologies:
+The Jobs Board is a simple static website, rendered from YAML files
+(the job posts) and React components.  It relies on the following
+technologies:
 
-- [Gatsby](https://www.gatsbyjs.com/) for static site rendering
-- [React](https://reactjs.org/) for the interactive frontend
+- [React Router](https://reactrouter.com/) in framework mode, which
+  prerenders all pages to static HTML
+- [React](https://react.dev/) for the interactive frontend
 
-The website is compiled by running `make`, which executes the following steps:
-
-1. `tools/bundle_posts.py`: This aggregates all posts from `jobs/*.yaml` and
-   produces `src/jobs.mjs`.
-2. Gatsby compiles the website.  It also creates a single page per
-   post (so that each post gets a static URL) (see `gatsby-node.mjs`).
+The website is compiled by running `make`.  At build time,
+`app/jobs.server.js` reads all posts from `jobs/*.yaml`, validates them,
+and converts their Markdown descriptions to sanitized HTML.  The build
+fails if a post does not pass validation.  Each post gets its own page,
+so that it has a static URL (see `react-router.config.js`).
 
 Frontend filtering is done via JavaScript.  Filters are defined in
-`src/filter-jobs.mjs` and the accompanying frontend lives in
-`src/components/JobsFilter.jsx`.
+`app/filter-jobs.mjs` and the accompanying frontend lives in
+`app/components/JobsFilter.jsx`.

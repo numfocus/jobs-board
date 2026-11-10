@@ -1,11 +1,8 @@
 import { isJobExpired } from "./utils.mjs";
 
-const filterJobs = (jobs, filter) => {
-  const today = new Date();
-
-  // Filter out expired jobs if requested.
+const filterJobs = (jobs, filter, now) => {
   if (!filter.showExpired) {
-    jobs = jobs.filter((job) => !isJobExpired(job, today));
+    jobs = jobs.filter((job) => !isJobExpired(job, now));
   }
 
   if (filter.fullTime) {
@@ -13,7 +10,6 @@ const filterJobs = (jobs, filter) => {
   }
 
   if (filter.ossTimeGt) {
-    // Ensure we're comparing numbers
     const minOSS = parseInt(filter.ossTimeGt, 10);
     jobs = jobs.filter((job) => job.percentOSS >= minOSS);
   }
